@@ -15,7 +15,7 @@ const NavbarIcon = () => {
   const isLoggedIn = false
 
   const handleProfile = () => {
-    if (isLoggedIn) {
+    if (!isLoggedIn) {
       router.push("/login")
     }
     setIsProfileOpen((prev) => !prev)
